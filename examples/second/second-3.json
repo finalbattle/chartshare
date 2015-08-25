@@ -1,0 +1,149 @@
+{
+    "map": {
+        "animation": "0",
+        "showbevel": "0",
+        "usehovercolor": "1",
+        "canvasbordercolor": "FFFFFF",
+        "bordercolor": "FFFFFF",
+        "showlegend": "1",
+        "showshadow": "0",
+        "legendposition": "BOTTOM",
+        "legendborderalpha": "0",
+        "legendbordercolor": "ffffff",
+        "legendallowdrag": "0",
+        "legendshadow": "0",
+        "caption": "Website Visits for the month of Jan 2014",
+        "connectorcolor": "000000",
+        "fillalpha": "80",
+        "hovercolor": "CCCCCC",
+        "showborder": 0
+    },
+    "colorrange": {
+        "minvalue": "0",
+        "startlabel": "Low",
+        "endlabel": "High",
+        "code": "e44a00",
+        "gradient": "1",
+        "color": [
+            {
+                "maxvalue": "30000",
+                "displayvalue": "Average",
+                "code": "f8bd19"
+            },
+            {
+                "maxvalue": "100000",
+                "code": "6baa01"
+            }
+        ]
+    },
+    "data": [
+        {
+            "id": "10",
+            "value": "382"
+        },
+        {
+            "id": "11",
+            "value": "2472"
+        },
+        {
+            "id": "12",
+            "value": "1503"
+        },
+        {
+            "id": "13",
+            "value": "74370"
+        },
+        {
+            "id": "15",
+            "value": "63721"
+        },
+        {
+            "id": "16",
+            "value": "31999"
+        },
+        {
+            "id": "18",
+            "value": "46037"
+        },
+        {
+            "id": "19",
+            "value": "79905"
+        },
+        {
+            "id": "20",
+            "value": "60820"
+        },
+        {
+            "id": "21",
+            "value": "77472"
+        },
+        {
+            "id": "24",
+            "value": "57902"
+        },
+        {
+            "id": "25",
+            "value": "54092"
+        },
+        {
+            "id": "26",
+            "value": "38750"
+        },
+        {
+            "id": "29",
+            "value": "44105"
+        },
+        {
+            "id": "30",
+            "value": "31473"
+        },
+        {
+            "id": "31",
+            "value": "48693"
+        },
+        {
+            "id": "32",
+            "value": "34876"
+        },
+        {
+            "id": "36",
+            "value": "40042"
+        },
+        {
+            "id": "06",
+            "value": "48275"
+        },
+        {
+            "id": "08",
+            "value": "73824"
+        },
+        {
+            "id": "05",
+            "value": "74123"
+        },
+        {
+            "id": "09",
+            "value": "32584"
+        },
+        {
+            "id": "01",
+            "value": "48900"
+        },
+        {
+            "id": "04",
+            "value": "80875"
+        },
+        {
+            "id": "02",
+            "value": "94865"
+        },
+        {
+            "id": "07",
+            "value": "99180"
+        },
+        {
+            "id": "03",
+            "value": "99180"
+        }
+    ]
+}

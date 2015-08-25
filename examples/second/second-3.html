@@ -1,0 +1,22 @@
+<html>
+<head>
+<title>demo</title>
+<script type="text/javascript" src="fusioncharts/js/fusioncharts.js"></script>
+<script type="text/javascript" src="fusioncharts/js/themes/fusioncharts.theme.fint.js"></script>
+<script type="text/javascript" src="fusioncharts/js/fusioncharts.maps.js"></script>
+</head>
+<body>
+<div id="second"></div>
+<script type="text/javascript">
+FusionCharts.ready(function(){
+  var chart = new FusionCharts({
+    type:"maps/china",
+    width: "600",
+    height: "600",
+  })
+  chart.setJSONUrl("second-3.json")
+  chart.render("second")
+})
+</script>
+</body>
+</html>
