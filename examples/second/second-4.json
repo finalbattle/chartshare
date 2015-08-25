@@ -1,0 +1,253 @@
+{
+    "map": {
+        "animation": "1",
+        "showbevel": "1",
+        "usehovercolor": "1",
+        "canvasbordercolor": "FFFF00",
+        "bordercolor": "FF0000",
+        "showlegend": "1",
+        "showshadow": "30",
+        "legendposition": "BOTTOM",
+        "legendborderalpha": "0.5",
+        "legendbordercolor": "ffff00",
+        "legendallowdrag": "0",
+        "legendshadow": "0",
+        "caption": "Website Visits for the month of Jan 2014",
+        "connectorcolor": "000000",
+        "fillalpha": "80",
+        "hovercolor": "CCCCCC",
+        "showborder": 1,
+        "labelsepchar": ":",
+        "basefontsize": "9"
+    },
+    "colorrange": {
+        "minvalue": "0",
+        "startlabel": "Low",
+        "endlabel": "High",
+        "code": "e44a00",
+        "gradient": "1",
+        "color": [
+            {
+                "maxvalue": "30000",
+                "displayvalue": "Average",
+                "code": "f8bd19"
+            },
+            {
+                "maxvalue": "100000",
+                "code": "6baa01"
+            }
+        ]
+    },
+    "data": [
+        {
+            "id": "cn.bj",
+            "value": "382",
+            "displayValue": "北京",
+            "toolText": "北京"
+        },
+        {
+            "id": "cn.sh",
+            "displayValue": "上海",
+            "toolText": "上海",
+            "value": "2472"
+        },
+        {
+            "id": "cn.cq",
+            "displayValue": "重庆",
+            "toolText": "重庆",
+            "value": "1503"
+        },
+        {
+            "id": "cn.gd",
+            "displayValue": "广东",
+            "toolText": "广东",
+            "value": "74370"
+        },
+        {
+            "id": "cn.ah",
+            "displayValue": "安徽",
+            "toolText": "安徽",
+            "value": "63721"
+        },
+        {
+            "id": "cn.fj",
+            "displayValue": "福建",
+            "toolText": "福建",
+            "value": "31999"
+        },
+        {
+            "id": "cn.gs",
+            "displayValue": "甘肃",
+            "toolText": "甘肃",
+            "value": "46037"
+        },
+        {
+            "id": "cn.gx",
+            "displayValue": "广西",
+            "toolText": "广西",
+            "value": "79905"
+        },
+        {
+            "id": "cn.gz",
+            "displayValue": "贵州",
+            "toolText": "贵州",
+            "value": "60820"
+        },
+        {
+            "id": "cn.ha",
+            "displayValue": "海南",
+            "toolText": "海南",
+            "value": "77472"
+        },
+        {
+            "id": "cn.hb",
+            "displayValue": "河北",
+            "toolText": "河北",
+            "value": "57902"
+        },
+        {
+            "id": "cn.hl",
+            "displayValue": "黑龙江",
+            "toolText": "黑龙江",
+            "value": "54092"
+        },
+        {
+            "id": "cn.he",
+            "displayValue": "河南",
+            "toolText": "河南",
+            "value": "38750"
+        },
+        {
+            "id": "cn.hk",
+            "displayValue": "香港",
+            "toolText": "香港",
+            "value": "44105"
+        },
+        {
+            "id": "cn.hu",
+            "displayValue": "湖北",
+            "toolText": "湖北",
+            "value": "31473"
+        },
+        {
+            "id": "cn.hn",
+            "displayValue": "湖南",
+            "toolText": "湖南",
+            "value": "48693"
+        },
+        {
+            "id": "cn.js",
+            "displayValue": "江苏",
+            "toolText": "江苏",
+            "value": "34876"
+        },
+        {
+            "id": "cn.jx",
+            "displayValue": "江西",
+            "toolText": "江西",
+            "value": "40042"
+        },
+        {
+            "id": "cn.ln",
+            "displayValue": "辽宁",
+            "toolText": "辽宁",
+            "value": "48275"
+        },
+        {
+            "id": "cn.jl",
+            "displayValue": "吉林",
+            "toolText": "吉林",
+            "value": "73824"
+        },
+        {
+            "id": "cn.ma",
+            "displayValue": "澳门",
+            "toolText": "澳门",
+            "value": "74123"
+        },
+        {
+            "id": "cn.nm",
+            "displayValue": "内蒙古",
+            "toolText": "内蒙古",
+            "value": "32584"
+        },
+        {
+            "id": "cn.nx",
+            "displayValue": "宁夏",
+            "toolText": "宁夏",
+            "value": "48900"
+        },
+        {
+            "id": "cn.qh",
+            "displayValue": "青海",
+            "toolText": "青海",
+            "value": "80875"
+        },
+        {
+            "id": "cn.sa",
+            "displayValue": "陕西",
+            "toolText": "陕西",
+            "value": "94865"
+        },
+        {
+            "id": "cn.sd",
+            "displayValue": "山东",
+            "toolText": "山东",
+            "value": "99180"
+        },
+        {
+            "id": "cn.sx",
+            "displayValue": "山西",
+            "toolText": "山西",
+            "value": "99180"
+        },
+        {
+            "id": "cn.sc",
+            "displayValue": "四川",
+            "toolText": "四川",
+            "value": "99180"
+        },
+        {
+            "id": "cn.ta",
+            "displayValue": "台湾",
+            "toolText": "台湾",
+            "value": "99180"
+        },
+        {
+            "id": "cn.tj",
+            "displayValue": "天津",
+            "toolText": "天津",
+            "value": "99180"
+        },
+        {
+            "id": "cn.xj",
+            "displayValue": "新疆",
+            "toolText": "新疆",
+            "value": "99180"
+        },
+        {
+            "id": "cn.yn",
+            "displayValue": "云南",
+            "toolText": "云南",
+            "value": "99180"
+        },
+        {
+            "id": "cn.jz",
+            "displayValue": "重庆",
+            "toolText": "重庆",
+            "value": "99180"
+        },
+        {
+            "id": "cn.xz",
+            "displayValue": "西藏",
+            "toolText": "西藏",
+            "value": "99"
+        },
+        {
+            "id": "cn.zj",
+            "displayValue": "浙江",
+            "toolText": "浙江",
+            "value": "99"
+        }
+    ]
+}
