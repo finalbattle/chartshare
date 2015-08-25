@@ -1,0 +1,50 @@
+{
+    "chart": {
+        "caption": "Marketing Expenses for 2013",
+        "numberprefix": "$",
+        "plotgradientcolor": "",
+        "bgcolor": "FFFFFF",
+        "showalternatehgridcolor": "0",
+        "showplotborder": "0",
+        "divlinecolor": "CCCCCC",
+        "showvalues": "1",
+        "showcanvasborder": "0",
+        "canvasbordercolor": "CCCCCC",
+        "canvasborderthickness": "1",
+        "yaxismaxvalue": "30000",
+        "captionpadding": "30",
+        "linethickness": "3",
+        "sshowanchors": "0",
+        "yaxisvaluespadding": "15",
+        "showlegend": "1",
+        "use3dlighting": "1",
+        "showshadow": "0",
+        "legendshadow": "0",
+        "legendborderalpha": "0",
+        "showborder": "0",
+        "palettecolors": "#EED17F,#97CBE7,#074868,#B0D67A,#2C560A,#DD9D82"
+    },
+    "data": [
+        {
+            "label": "Bakersfield Central",
+            "value": "880000",
+            "issliced": "1"
+        },
+        {
+            "label": "Garden Groove harbour",
+            "value": "730000"
+        },
+        {
+            "label": "Los Angeles Topanga",
+            "value": "590000"
+        },
+        {
+            "label": "Compton-Rancho Dom",
+            "value": "520000"
+        },
+        {
+            "label": "Daly City Serramonte",
+            "value": "330000"
+        }
+    ]
+}
