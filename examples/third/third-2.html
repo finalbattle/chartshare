@@ -17,7 +17,21 @@
                 show: true
             },
             legend: {
-                data:['销量']
+                orient: 'horizontal', // 'vertical'
+                x: 'right', // 'center' | 'left' | {number},
+                y: 'top', // 'center' | 'bottom' | {number}
+                backgroundColor: '#eee',
+                borderColor: 'rgba(178,34,34,0.8)',
+                borderWidth: 4,
+                padding: 10,    // [5, 10, 15, 20]
+                itemGap: 20,
+                textStyle: {color: 'red'},
+                data:[
+                    {
+                        name: '销量',
+                        textStyle: {fontWeight: 'bold', color: 'green'}
+                    }
+                ]
             },
             xAxis : [
                 {
@@ -34,6 +48,9 @@
                 {
                     "name":"销量",
                     "type":"line",
+                    "itemStyle": {
+                        lineStyle: "dotted"
+                    },
                     "data":[5, 20, 40, 10, 10, 20]
                 }
             ]
