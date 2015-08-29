@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <title>ECharts</title>
+</head>
+<body>
+    <!-- 为ECharts准备一个具备大小（宽高）的Dom -->
+    <div id="main-force" style="height:400px"></div>
+    <!-- ECharts单文件引入 -->
+    <script src="http://echarts.baidu.com/build/dist/echarts-all.js"></script>
+    <script type="text/javascript">
+        // 基于准备好的dom，初始化echarts图表
+        var myForceChart = echarts.init(document.getElementById('main-force')); 
+        
+        option = {
+            title : {
+                text: '国际关系',
+                // subtext: '数据来自人立方',
+                x:'right',
+                y:'bottom'
+            },
+            tooltip : {
+                trigger: 'item',
+                formatter: '{a} : {b}'
+            },
+            toolbox: {
+                show : true,
+                feature : {
+                    restore : {show: true},
+                    magicType: {show: true, type: ['force', 'chord']},
+                    saveAsImage : {show: true}
+                }
+            },
+            legend: {
+                x: 'left',
+                data:[
+                    '全天候战略合作伙伴关系',
+                    '全面战略协作伙伴关系',
+                    '战略合作伙伴关系',
+                    '全面战略合作伙伴关系',
+                    '全面战略伙伴关系',
+                    '全面合作伙伴关系',
+                    '传统友好合作关系'
+                ]
+            },
+            series : [
+                {
+                    type:'force',
+                    name : "国际关系",
+                    ribbonType: false,
+                    categories : [
+                        {
+                            name: '',
+                        },
+                        {
+                            name: '全天候战略合作伙伴关系',
+                        },
+                        {
+                            name: '全面战略协作伙伴关系',
+                        },
+                        {
+                            name: '战略合作伙伴关系',
+                        },
+                        {
+                            name: '全面战略合作伙伴关系',
+                        },
+                        {
+                            name: '全面战略伙伴关系',
+                        },
+                        {
+                            name:'全面合作伙伴关系',
+                        },
+                        {
+                            name:'传统友好合作关系'
+                        }
+                    ],
+                    itemStyle: {
+                        normal: {
+                            label: {
+                                show: true,
+                                textStyle: {
+                                    color: '#333'
+                                }
+                            },
+                            nodeStyle : {
+                                brushType : 'both',
+                                borderColor : 'rgba(255,215,0,0.4)',
+                                borderWidth : 1
+                            },
+                            linkStyle: {
+                                type: 'curve'
+                            }
+                        },
+                        emphasis: {
+                            label: {
+                                show: false
+                                // textStyle: null      // 默认使用全局文本样式，详见TEXTSTYLE
+                            },
+                            nodeStyle : {
+                                //r: 30
+                            },
+                            linkStyle : {}
+                        }
+                    },
+                    useWorker: false,
+                    minRadius : 15,
+                    maxRadius : 25,
+                    gravity: 1.1,
+                    scaling: 1.1,
+                    roam: 'move',
+                    nodes:[
+                        {category:0, name: '中国', value : 10, label: '中国'},
+                        {category:1, name: '巴基斯坦',value : 10},
+                        {category:2, name: '俄罗斯',value : 9},
+                        {category:3, name: '韩国',value : 8},
+                        {category:3, name: '阿富汗',value : 8},
+                        {category:4, name: '柬埔寨',value : 6},
+                        {category:4, name: '泰国',value : 6},
+                        {category:4, name: '缅甸',value : 6},
+                        {category:4, name: '越南',value : 6},
+                        {category:4, name: '老挝',value : 6},
+                        {category:5, name: '蒙古',value : 5},
+                        {category:5, name: '南非',value : 5},
+                        {category:5, name: '阿根廷',value : 5},
+                        {category:5, name: '墨西哥',value : 5},
+                        {category:5, name: '委内瑞拉',value : 5},
+                        {category:7, name: '朝鲜',value : 4},
+                    ],
+                    links : [
+                        {source : '巴基斯坦', target : '中国', weight : 10, name: '中巴:全天候战略合作伙伴关系'},
+                        {source : '俄罗斯', target : '中国', weight : 9, name: '中俄:全面战略协作伙伴关系'},
+                        {source : '韩国', target : '中国', weight : 8, name: '中韩:战略合作伙伴关系'},
+                        {source : '阿富汗', target : '中国', weight : 8, name: '中阿:战略合作伙伴关系'},
+                        {source : '柬埔寨', target : '中国', weight : 6, name: '中柬:全面战略合作伙伴关系'},
+                        {source : '泰国', target : '中国', weight : 6, name: '中泰:全面战略合作伙伴关系'},
+                        {source : '缅甸', target : '中国', weight : 6, name: '中缅:全面战略合作伙伴关系'},
+                        {source : '老挝', target : '中国', weight : 6, name: '中老:全面战略合作伙伴关系'},
+                        {source : '越南', target : '中国', weight : 6, name: '中越:全面战略合作伙伴关系'},
+                        {source : '蒙古', target : '中国', weight : 5, name: '中蒙:全面战略伙伴关系'},
+                        {source : '南非', target : '中国', weight : 5, name: '中南:全面战略伙伴关系'},
+                        {source : '阿根廷', target : '中国', weight : 5, name: '中阿:全面战略伙伴关系'},
+                        {source : '墨西哥', target : '中国', weight : 5, name: '中墨:全面战略伙伴关系'},
+                        {source : '委内瑞拉', target : '中国', weight : 5, name: '中委:全面战略伙伴关系'},
+                        {source : '朝鲜', target : '中国', weight : 4, name: '中朝:传统友好合作关系'},
+                    ]
+                }
+            ]
+        };
+        //var ecConfig = require('echarts/config');
+        //function focus(param) {
+        //    var data = param.data;
+        //    var links = option.series[0].links;
+        //    var nodes = option.series[0].nodes;
+        //    if (
+        //        data.source !== undefined
+        //        && data.target !== undefined
+        //    ) { //点击的是边
+        //        var sourceNode = nodes.filter(function (n) {return n.name == data.source})[0];
+        //        var targetNode = nodes.filter(function (n) {return n.name == data.target})[0];
+        //        console.log("选中了边 " + sourceNode.name + ' -> ' + targetNode.name + ' (' + data.weight + ')');
+        //    } else { // 点击的是点
+        //        console.log("选中了" + data.name + '(' + data.value + ')');
+        //    }
+        //}
+        //myForceChart.on(ecConfig.EVENT.CLICK, focus)
+        //
+        //myForceChart.on(ecConfig.EVENT.FORCE_LAYOUT_END, function () {
+        //    console.log(myForceChart.chart.force.getPosition());
+        //});
+
+        // 为echarts对象加载数据 
+        myForceChart.setOption(option); 
+    </script>
+</body>
+</html>
