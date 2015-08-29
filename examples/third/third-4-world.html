@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <title>ECharts Example</title>
+</head>
+<body>
+    <!-- 为ECharts准备一个具备大小（宽高）的Dom -->
+    <div id="main" style="height:400px"></div>
+    <!-- ECharts单文件引入 -->
+    <script src="http://echarts.baidu.com/build/dist/echarts-all.js"></script>
+    <script type="text/javascript">
+        // 基于准备好的dom，初始化echarts图表
+        var myChart = echarts.init(document.getElementById('main'));
+        var effect = ['spin' , 'bar' , 'ring' , 'whirling' , 'dynamicLine' , 'bubble'];
+        var effectIndex = 4;
+        myChart.showLoading({
+            text : "2015 \n精彩数据即将呈现，你舍得离开吗？",
+            effect : effect[effectIndex],
+            textStyle : {
+                fontSize : 20
+            }
+        });
+        option = {
+            tooltip : {
+                trigger: 'item',
+                formatter: '{b}'
+            },
+            dataRange: {
+                min : 0,
+                max : 100,
+                calculable : true,
+                color: ['#ff3333', 'orange', 'yellow','lime','aqua'],
+                textStyle:{
+                    color:'#fff'
+                }
+            },
+            series : [
+                {
+                    name: '世界地图',
+                    type: 'map',
+                    mapType: 'world',
+                    hoverable: false,
+                    roam: true,
+                    selectedMode : 'single',
+                    // itemStyle:{
+                    //     normal:{label:{show:false}},
+                    //     emphasis:{label:{show:true}}
+                    // },
+                    itemStyle:{
+                        normal:{
+                            borderColor:'rgba(100,149,237,1)',
+                            borderWidth:0.5,
+                            areaStyle:{
+                                color: '#1b1b1b'
+                            }
+                        }
+                    },
+                    markLine : {
+                        smooth:true,
+                        effect : {
+                            show: true,
+                            scaleSize: 1,
+                            period: 30,
+                            color: '#fff',
+                            shadowBlur: 10
+                        },
+                        itemStyle : {
+                            normal: {
+                                borderWidth:1,
+                                lineStyle: {
+                                    type: 'solid',
+                                    shadowBlur: 10
+                                }
+                            }
+                        },
+                        data : [
+                            [{name:'莫斯科',value:95}, {name:'北京'}],
+                            [{name:'开罗',value:90}, {name:'北京'}],
+                            [{name:'明斯克',value:80}, {name:'北京'}],
+                            [{name:'哈瓦那',value:70}, {name:'北京'}],
+                            [{name:'比什凯克',value:60}, {name:'北京'}],
+                            [{name:'墨西哥城',value:50}, {name:'北京'}],
+                            [{name:'乌兰巴托',value:40}, {name:'北京'}],
+                            [{name:'伊斯兰堡',value:30}, {name:'北京'}],
+                            [{name:'杜尚别',value:30}, {name:'北京'}],
+                            [{name:'喀布尔',value:30}, {name:'北京'}],
+                            [{name:'金边',value:30}, {name:'北京'}],
+                            [{name:'苏瓦',value:30}, {name:'北京'}],
+                            [{name:'万象',value:30}, {name:'北京'}],
+                            [{name:'瓦努阿图',value:30}, {name:'北京'}],
+                            [{name:'加拉加斯',value:30}, {name:'北京'}],
+                            [{name:'布拉格',value:30}, {name:'北京'}],
+                            [{name:'仰光',value:30}, {name:'北京'}],
+                            [{name:'首尔',value:30}, {name:'北京'}],
+                            [{name:'约翰内斯堡',value:30}, {name:'北京'}],
+                            [{name:'喀土穆',value:30}, {name:'北京'}],
+                            [{name:'帝力',value:30}, {name:'北京'}],
+                            [{name:'塔什干',value:30}, {name:'北京'}],
+                            [{name:'亚的斯亚贝巴',value:30}, {name:'北京'}],
+                            [{name:'布宜诺斯艾利斯',value:30}, {name:'北京'}],
+                            [{name:'阿尔及尔',value:30}, {name:'北京'}],
+                            [{name:'曼谷',value:30}, {name:'北京'}],
+                            [{name:'平壤',value:30}, {name:'北京'}],
+                            [{name:'萨拉热窝',value:30}, {name:'北京'}],
+                            [{name:'华沙',value:30}, {name:'北京'}],
+                            [{name:'金沙萨',value:30}, {name:'北京'}],
+                            [{name:'贝尔格莱德',value:20}, {name:'北京'}]
+                        ]
+                    },
+                    markPoint : {
+                        symbol:'emptyCircle',
+                        symbolSize : function (v){
+                            return 10 + v/10
+                        },
+                        effect : {
+                            show: true,
+                            shadowBlur : 0
+                        },
+                        itemStyle:{
+                            normal:{
+                                label:{show:false}
+                            },
+                            emphasis: {
+                                label:{position:'top'}
+                            }
+                        },
+                        data : [
+                            {name:'莫斯科',value:85},
+                            {name:'开罗',value:90},
+                            {name:'明斯克',value:80},
+                            {name:'哈瓦那',value:70},
+                            {name:'比什凯克',value:60},
+                            {name:'墨西哥城',value:50},
+                            {name:'乌兰巴托',value:40},
+                            {name:'伊斯兰堡',value:30},
+                            {name:'杜尚别',value:30},
+                            {name:'喀布尔',value:30},
+                            {name:'金边',value:30},
+                            {name:'苏瓦',value:30},
+                            {name:'万象',value:30},
+                            {name:'瓦努阿图',value:30},
+                            {name:'加拉加斯',value:30},
+                            {name:'布拉格',value:30},
+                            {name:'仰光',value:30},
+                            {name:'首尔',value:30},
+                            {name:'约翰内斯堡',value:30},
+                            {name:'喀土穆',value:30},
+                            {name:'帝力',value:30},
+                            {name:'塔什干',value:30},
+                            {name:'亚的斯亚贝巴',value:30},
+                            {name:'布宜诺斯艾利斯',value:30},
+                            {name:'阿尔及尔',value:30},
+                            {name:'曼谷',value:30},
+                            {name:'平壤',value:30},
+                            {name:'萨拉热窝',value:30},
+                            {name:'华沙',value:30},
+                            {name:'金沙萨',value:30},
+                            {name:'贝尔格莱德',value:20}
+                        ]
+                    // }
+                    },
+                    geoCoord: {
+                        '北京': [116.4551,40.2539],
+                        '莫斯科': [37.35,55.45],
+                        '开罗': [31.15,30.03],
+                        '明斯克': [27.34,53.54],
+                        '哈瓦那': [-82.3327094,23.0506654],
+                        '比什凯克': [74,36,42.54],
+                        '墨西哥城': [-99.09,19,24],
+                        '乌兰巴托': [106.53,47.55],
+                        '伊斯兰堡': [73.10,33.42],
+                        '杜尚别': [68.48,38.35],
+                        '喀布尔': [69.12,34.31],
+                        '金边': [104.917445,11.558831],
+                        '苏瓦': [178.463392,-18.1237813],
+                        '万象': [102.5777848,17.9537247],
+                        '瓦努阿图': [167.595411,-15.4492136],
+                        '加拉加斯': [-66.8903658,10.4683918],
+                        '布拉格': [14.4656,50.0596],
+                        '仰光': [96.1695098,16.903821],
+                        '首尔': [126.98955,37.5651],
+                        '约翰内斯堡': [28.149466,-25.9252875],
+                        '喀土穆': [32.5725965,15.5015451],
+                        '帝力': [125.5699712,-8.556456],
+                        '塔什干': [69.2793667,41.2825974],
+                        '亚的斯亚贝巴': [38.7781448,8.9631768],
+                        '布宜诺斯艾利斯': [-58.4333203,-34.6158238],
+                        '阿尔及尔': [3.042048,36.7528864],
+                        '曼谷': [100.6331108,13.7246005],
+                        '平壤': [125.7421118,39.0291382],
+                        '萨拉热窝': [18.3829915,43.8937233],
+                        '华沙': [21.0611941,52.232938],
+                        '金沙萨': [15.8485285,-4.4902476],
+                        '贝尔格莱德': [44.81,20.46]
+                    },
+                    data:[
+                        {name: '中国', value: 100},
+                        {name: '俄罗斯', value: 70},
+                        {name: '蒙古', value: 60},
+                        {name: '白俄罗斯', value: 60},
+                        {name: '捷克共和国', value: 50},
+                        {name: '波兰', value: 40},
+                        {name: '塞尔维亚共和国', value: 30},
+                        {name: '波斯尼亚和黑塞哥维那', value: 20},
+                        {name: '阿尔及利亚', value: 60},
+                        {name: '埃及', value: 50},
+                        {name: '刚果民主共和国', value: 40},
+                        {name: '埃塞俄比亚', value: 30},
+                        {name: '南非', value: 50},
+                        {name: '苏丹', value: 20},
+                        {name: '巴基斯坦', value: 80},
+                        {name: '哈萨克斯坦', value: 60},
+                        {name: '吉尔吉斯斯坦', value: 50},
+                        {name: '塔吉克斯坦', value: 40},
+                        {name: '乌兹别克斯坦', value: 30},
+                        {name: '阿富汗', value: 20},
+                        {name: '韩国', value: 70},
+                        {name: '朝鲜', value: 30},
+                        {name: '缅甸', value: 60},
+                        {name: '越南', value: 50},
+                        {name: '老挝', value: 40},
+                        {name: '泰国', value: 50},
+                        {name: '柬埔寨', value: 50},
+                        {name: '斐济', value: 50},
+                        {name: '东帝汶', value: 40},
+                        {name: '瓦努阿图', value: 30},
+                        {name: '墨西哥', value: 50},
+                        {name: '委内瑞拉', value: 60},
+                        {name: '阿根廷', value: 60}
+                    ],
+                    // 自定义名称
+                    nameMap : {
+                        'Afghanistan':'阿富汗',
+                        'Angola':'安哥拉',
+                        'Albania':'阿尔巴尼亚',
+                        'United Arab Emirates':'阿联酋',
+                        'Argentina':'阿根廷',
+                        'Armenia':'亚美尼亚',
+                        'French Southern and Antarctic Lands':'法属南半球和南极领地',
+                        'Australia':'澳大利亚',
+                        'Austria':'奥地利',
+                        'Azerbaijan':'阿塞拜疆',
+                        'Burundi':'布隆迪',
+                        'Belgium':'比利时',
+                        'Benin':'贝宁',
+                        'Burkina Faso':'布基纳法索',
+                        'Bangladesh':'孟加拉国',
+                        'Bulgaria':'保加利亚',
+                        'The Bahamas':'巴哈马',
+                        'Bosnia and Herzegovina':'波斯尼亚和黑塞哥维那',
+                        'Belarus':'白俄罗斯',
+                        'Belize':'伯利兹',
+                        'Bermuda':'百慕大',
+                        'Bolivia':'玻利维亚',
+                        'Brazil':'巴西',
+                        'Brunei':'文莱',
+                        'Bhutan':'不丹',
+                        'Botswana':'博茨瓦纳',
+                        'Central African Republic':'中非共和国',
+                        'Canada':'加拿大',
+                        'Switzerland':'瑞士',
+                        'Chile':'智利',
+                        'China':'中国',
+                        'Ivory Coast':'象牙海岸',
+                        'Cameroon':'喀麦隆',
+                        'Democratic Republic of the Congo':'刚果民主共和国',
+                        'Republic of the Congo':'刚果共和国',
+                        'Colombia':'哥伦比亚',
+                        'Costa Rica':'哥斯达黎加',
+                        'Cuba':'古巴',
+                        'Northern Cyprus':'北塞浦路斯',
+                        'Cyprus':'塞浦路斯',
+                        'Czech Republic':'捷克共和国',
+                        'Germany':'德国',
+                        'Djibouti':'吉布提',
+                        'Denmark':'丹麦',
+                        'Dominican Republic':'多明尼加共和国',
+                        'Algeria':'阿尔及利亚',
+                        'Ecuador':'厄瓜多尔',
+                        'Egypt':'埃及',
+                        'Eritrea':'厄立特里亚',
+                        'Spain':'西班牙',
+                        'Estonia':'爱沙尼亚',
+                        'Ethiopia':'埃塞俄比亚',
+                        'Finland':'芬兰',
+                        'Fiji':'斐',
+                        'Falkland Islands':'福克兰群岛',
+                        'France':'法国',
+                        'Gabon':'加蓬',
+                        'United Kingdom':'英国',
+                        'Georgia':'格鲁吉亚',
+                        'Ghana':'加纳',
+                        'Guinea':'几内亚',
+                        'Gambia':'冈比亚',
+                        'Guinea Bissau':'几内亚比绍',
+                        'Equatorial Guinea':'赤道几内亚',
+                        'Greece':'希腊',
+                        'Greenland':'格陵兰',
+                        'Guatemala':'危地马拉',
+                        'French Guiana':'法属圭亚那',
+                        'Guyana':'圭亚那',
+                        'Honduras':'洪都拉斯',
+                        'Croatia':'克罗地亚',
+                        'Haiti':'海地',
+                        'Hungary':'匈牙利',
+                        'Indonesia':'印尼',
+                        'India':'印度',
+                        'Ireland':'爱尔兰',
+                        'Iran':'伊朗',
+                        'Iraq':'伊拉克',
+                        'Iceland':'冰岛',
+                        'Israel':'以色列',
+                        'Italy':'意大利',
+                        'Jamaica':'牙买加',
+                        'Jordan':'约旦',
+                        'Japan':'日本',
+                        'Kazakhstan':'哈萨克斯坦',
+                        'Kenya':'肯尼亚',
+                        'Kyrgyzstan':'吉尔吉斯斯坦',
+                        'Cambodia':'柬埔寨',
+                        'South Korea':'韩国',
+                        'Kosovo':'科索沃',
+                        'Kuwait':'科威特',
+                        'Laos':'老挝',
+                        'Lebanon':'黎巴嫩',
+                        'Liberia':'利比里亚',
+                        'Libya':'利比亚',
+                        'Sri Lanka':'斯里兰卡',
+                        'Lesotho':'莱索托',
+                        'Lithuania':'立陶宛',
+                        'Luxembourg':'卢森堡',
+                        'Latvia':'拉脱维亚',
+                        'Morocco':'摩洛哥',
+                        'Moldova':'摩尔多瓦',
+                        'Madagascar':'马达加斯加',
+                        'Mexico':'墨西哥',
+                        'Macedonia':'马其顿',
+                        'Mali':'马里',
+                        'Myanmar':'缅甸',
+                        'Montenegro':'黑山',
+                        'Mongolia':'蒙古',
+                        'Mozambique':'莫桑比克',
+                        'Mauritania':'毛里塔尼亚',
+                        'Malawi':'马拉维',
+                        'Malaysia':'马来西亚',
+                        'Namibia':'纳米比亚',
+                        'New Caledonia':'新喀里多尼亚',
+                        'Niger':'尼日尔',
+                        'Nigeria':'尼日利亚',
+                        'Nicaragua':'尼加拉瓜',
+                        'Netherlands':'荷兰',
+                        'Norway':'挪威',
+                        'Nepal':'尼泊尔',
+                        'New Zealand':'新西兰',
+                        'Oman':'阿曼',
+                        'Pakistan':'巴基斯坦',
+                        'Panama':'巴拿马',
+                        'Peru':'秘鲁',
+                        'Philippines':'菲律宾',
+                        'Papua New Guinea':'巴布亚新几内亚',
+                        'Poland':'波兰',
+                        'Puerto Rico':'波多黎各',
+                        'North Korea':'北朝鲜',
+                        'Portugal':'葡萄牙',
+                        'Paraguay':'巴拉圭',
+                        'Qatar':'卡塔尔',
+                        'Romania':'罗马尼亚',
+                        'Russia':'俄罗斯',
+                        'Rwanda':'卢旺达',
+                        'Western Sahara':'西撒哈拉',
+                        'Saudi Arabia':'沙特阿拉伯',
+                        'Sudan':'苏丹',
+                        'South Sudan':'南苏丹',
+                        'Senegal':'塞内加尔',
+                        'Solomon Islands':'所罗门群岛',
+                        'Sierra Leone':'塞拉利昂',
+                        'El Salvador':'萨尔瓦多',
+                        'Somaliland':'索马里兰',
+                        'Somalia':'索马里',
+                        'Republic of Serbia':'塞尔维亚共和国',
+                        'Suriname':'苏里南',
+                        'Slovakia':'斯洛伐克',
+                        'Slovenia':'斯洛文尼亚',
+                        'Sweden':'瑞典',
+                        'Swaziland':'斯威士兰',
+                        'Syria':'叙利亚',
+                        'Chad':'乍得',
+                        'Togo':'多哥',
+                        'Thailand':'泰国',
+                        'Tajikistan':'塔吉克斯坦',
+                        'Turkmenistan':'土库曼斯坦',
+                        'East Timor':'东帝汶',
+                        'Trinidad and Tobago':'特里尼达和多巴哥',
+                        'Tunisia':'突尼斯',
+                        'Turkey':'土耳其',
+                        'United Republic of Tanzania':'坦桑尼亚联合共和国',
+                        'Uganda':'乌干达',
+                        'Ukraine':'乌克兰',
+                        'Uruguay':'乌拉圭',
+                        'United States of America':'美国',
+                        'Uzbekistan':'乌兹别克斯坦',
+                        'Venezuela':'委内瑞拉',
+                        'Vietnam':'越南',
+                        'Vanuatu':'瓦努阿图',
+                        'West Bank':'西岸',
+                        'Yemen':'也门',
+                        'South Africa':'南非',
+                        'Zambia':'赞比亚',
+                        'Zimbabwe':'津巴布韦'
+                    }
+                }
+            ]
+        };
+        setTimeout(function (){
+            myChart.hideLoading();
+            myChart.setOption(option);
+        },2200);
+        // var ecConfig = require('echarts/config');
+        // myChart.on(ecConfig.EVENT.MAP_SELECTED, function (param){
+        //     var selected = param.selected;
+        //     var str = '当前选择： ';
+        //     for (var p in selected) {
+        //         if (selected[p]) {
+        //             str += p + ' ';
+        //         }
+        //     }
+        //     document.getElementById('wrong-message').innerHTML = str;
+        // })
+    </script>
+</body>
