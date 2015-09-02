@@ -1,12 +1,152 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
+<html lang="en">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,target-densitydpi=high-dpi,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
     <title>图解来华参加中国人民抗日战争胜利70周年阅兵国家</title>
+    <style type="text/css">
+        body
+        {
+            padding: 0px;
+        }
+        img{
+          max-width: 100%;
+        }
+        @media screen and (max-width: 640px) 
+        {
+            .main_wrap_l h1
+            {
+                font-size: 28px;
+                text-align: center;
+                line-height: 200%;
+                color: #5E8B34;
+            }
+            .main_wrap_l .article_info
+            {
+                font-size: 18px;
+                color: #858585;
+                line-height: 200%;
+                text-align: center;
+            }
+            .main_wrap_l .content
+            {
+                padding: 5px;
+            }
+            .main_wrap_l .content *
+            {
+                line-height: 200%;
+                font-size: 20px;
+            }
+        }
+
+        @media screen and (max-width: 360px) 
+        {
+            .main_wrap_l h1
+            {
+                font-size: 24px;
+                text-align: center;
+                line-height: 200%;
+                color: #5E8B34;
+            }
+            .main_wrap_l .article_info
+            {
+                font-size: 14px;
+                color: #858585;
+                line-height: 200%;
+                text-align: center;
+            }
+            .main_wrap_l .content
+            {
+                padding: 5px;
+            }
+            .main_wrap_l .content *
+            {
+                line-height: 200%;
+                font-size: 16px;
+            }
+        }
+
+        @media screen and (max-width: 320px) 
+        {
+            .main_wrap_l h1
+            {
+                font-size: 22px;
+                text-align: center;
+                line-height: 200%;
+                color: #5E8B34;
+            }
+            .main_wrap_l .article_info
+            {
+                font-size: 12px;
+                color: #858585;
+                line-height: 200%;
+                text-align: center;
+            }
+            .main_wrap_l .content
+            {
+                padding: 5px;
+            }
+            .main_wrap_l .content *
+            {
+                line-height: 200%;
+                font-size: 14px;
+            }
+        }
+        
+        .table
+        {
+            border-left: #c9deef solid 1px;
+            border-top: #c9deef solid 1px;
+        }
+        table
+        {
+            border-collapse: collapse;
+            border-spacing: 0;
+            width: 100%;
+        }
+        tr
+        {
+            display: table-row;
+            vertical-align: inherit;
+            border-color: inherit;
+        }
+        .table tr td
+        {
+            border-right: #c9deef solid 1px;
+            border-bottom: #c9deef solid 1px;
+            padding-left: 10px;
+        }
+        .slideTxtBox1
+        {
+            border: 1px solid #c9deef;
+            border-top: 4px solid #c9deef;
+            text-align: left;
+            float: left;
+            margin-left: 0;
+            margin-top: 10px;
+            margin-bottom: 5px;
+            width: 100%;
+        }
+        .slideTxtBox1 .hd
+        {
+            height: 30px;
+            line-height: 30px;
+            padding-left: 10px;
+            background: #e9f2f9;
+            border-bottom: 1px solid#c9deef;
+            position: relative;
+        }
+        .slideTxtBox1 .bd
+        {
+            padding-left: 10px;
+        }
+    </style>
 </head>
 <body>
-    <section>
-    <img src="img1.jpg" style="height:200px"/>
+    <div class="main_wrap_l">
+
+        <div class="content">
+            <img src="img1.jpg" style="height:200px"/>
     <p>
         白俄罗斯、古巴、埃及、哈萨克斯坦、吉尔吉斯斯坦、墨西哥、蒙古、巴基斯坦、塞尔维亚、塔吉克斯坦、俄罗斯等11个国家派方队参加阅兵，阿富汗、柬埔寨、斐济、老挝、瓦努阿图、委内瑞拉等6个国家派代表队参加阅兵。
     </p>
@@ -14,6 +154,7 @@
 
     <!-- 为ECharts准备一个具备大小（宽高）的Dom -->
     <div id="main" style="height:400px"></div>
+    <p><strong>注：图中绿色区域国家为来华参观阅兵国家。黄色、桔黄色区域的国家为派方队参加阅兵国家</strong></p>
     <!-- <div id="main-force" style="height:400px"></div> -->
     <p>
         参加阅兵的外国领导人共30位：白俄罗斯总统卢卡申科，波黑主席团轮值主席乔维奇，柬埔寨国王西哈莫尼，捷克总统泽曼，刚果民主共和国总统卡比拉，埃及总统塞西，哈萨克斯坦总统纳扎尔巴耶夫，吉尔吉斯斯坦总统阿塔姆巴耶夫，老挝国家主席朱马里，蒙古国总统额勒贝格道尔吉，缅甸总统登盛，巴基斯坦总统侯赛因，韩国总统朴槿惠，俄罗斯总统普京，塞尔维亚总统尼科利奇，南非总统祖马，苏丹总统巴希尔，塔吉克斯坦总统拉赫蒙，东帝汶总统鲁瓦克，乌兹别克斯坦总统卡里莫夫，委内瑞拉总统马杜罗，越南国家主席张晋创，埃塞俄比亚总理海尔马里亚姆，瓦努阿图总理基尔曼，阿根廷总统代表、副总统兼参议长布杜，古巴国务委员会第一副主席兼部长会议第一副主席迪亚斯－卡内尔，阿尔及利亚总统代表、民族院议长本·萨拉赫，波兰众议长基达瓦-布翁斯卡，朝鲜劳动党中央政治局委员、党中央书记崔龙海，泰国副总理兼国防部长巴威。
@@ -34,6 +175,7 @@
             }
         });
         option = {
+            backgroundColor: 'rgba(100,149,237,0.5)',
             tooltip : {
                 trigger: 'item',
                 formatter: '{b}'
@@ -138,23 +280,23 @@
                             }
                         },
                         data : [
-                            {name:'莫斯科',value:85},
+                            {name:'莫斯科',value:90},
                             {name:'开罗',value:90},
                             {name:'明斯克',value:80},
-                            {name:'哈瓦那',value:70},
+                            {name:'哈瓦那',value:90},
                             {name:'比什凯克',value:60},
-                            {name:'墨西哥城',value:50},
-                            {name:'乌兰巴托',value:40},
+                            {name:'墨西哥城',value:80},
+                            {name:'乌兰巴托',value:60},
                             {name:'伊斯兰堡',value:30},
                             {name:'杜尚别',value:30},
                             {name:'喀布尔',value:30},
-                            {name:'金边',value:30},
+                            {name:'金边',value:50},
                             {name:'苏瓦',value:30},
-                            {name:'万象',value:30},
-                            {name:'瓦努阿图',value:30},
+                            {name:'万象',value:60},
+                            {name:'瓦努阿图',value:60},
                             {name:'加拉加斯',value:30},
                             {name:'布拉格',value:30},
-                            {name:'仰光',value:30},
+                            {name:'仰光',value:50},
                             {name:'首尔',value:30},
                             {name:'约翰内斯堡',value:30},
                             {name:'喀土穆',value:30},
@@ -165,8 +307,8 @@
                             {name:'阿尔及尔',value:30},
                             {name:'曼谷',value:30},
                             {name:'平壤',value:30},
-                            {name:'萨拉热窝',value:30},
-                            {name:'华沙',value:30},
+                            {name:'萨拉热窝',value:40},
+                            {name:'华沙',value:60},
                             {name:'金沙萨',value:30},
                             {name:'贝尔格莱德',value:20}
                         ]
@@ -209,25 +351,25 @@
                     data:[
                         {name: '中国', value: 100},
                         {name: '俄罗斯', value: 70},
-                        {name: '蒙古', value: 60},
+                        {name: '蒙古', value: 40},
                         {name: '白俄罗斯', value: 60},
-                        {name: '捷克共和国', value: 50},
+                        {name: '捷克共和国', value: 40},
                         {name: '波兰', value: 40},
-                        {name: '塞尔维亚共和国', value: 30},
+                        {name: '塞尔维亚共和国', value: 60},
                         {name: '波斯尼亚和黑塞哥维那', value: 20},
-                        {name: '阿尔及利亚', value: 60},
-                        {name: '埃及', value: 50},
+                        {name: '阿尔及利亚', value: 40},
+                        {name: '埃及', value: 60},
                         {name: '刚果民主共和国', value: 40},
                         {name: '埃塞俄比亚', value: 30},
-                        {name: '南非', value: 50},
+                        {name: '南非', value: 40},
                         {name: '苏丹', value: 20},
                         {name: '巴基斯坦', value: 80},
                         {name: '哈萨克斯坦', value: 60},
-                        {name: '吉尔吉斯斯坦', value: 50},
-                        {name: '塔吉克斯坦', value: 40},
+                        {name: '吉尔吉斯斯坦', value: 60},
+                        {name: '塔吉克斯坦', value: 60},
                         {name: '乌兹别克斯坦', value: 30},
                         {name: '阿富汗', value: 20},
-                        {name: '韩国', value: 70},
+                        {name: '韩国', value: 40},
                         {name: '朝鲜', value: 30},
                         {name: '缅甸', value: 60},
                         {name: '越南', value: 50},
@@ -237,8 +379,9 @@
                         {name: '斐济', value: 50},
                         {name: '东帝汶', value: 40},
                         {name: '瓦努阿图', value: 30},
-                        {name: '墨西哥', value: 50},
-                        {name: '委内瑞拉', value: 60},
+                        {name: '墨西哥', value: 60},
+                        {name: '古巴', value: 90},
+                        {name: '委内瑞拉', value: 40},
                         {name: '阿根廷', value: 60}
                     ],
                     // 自定义名称
@@ -440,181 +583,7 @@
         //     document.getElementById('wrong-message').innerHTML = str;
         // })
     </script>
-    <script type="text/javascript">
-        // 基于准备好的dom，初始化echarts图表
-        // var myForceChart = echarts.init(document.getElementById('main-force')); 
-        // var effect = ['spin' , 'bar' , 'ring' , 'whirling' , 'dynamicLine' , 'bubble'];
-        // var effectIndex = 2;
-        // myForceChart.showLoading({
-        //     text : "参加2015纪念中国人民抗日战争暨世界反法西斯战争胜利70周年\n主要国家领导人或团体代表 \n精彩数据即将呈现...",
-        //     effect : effect[effectIndex],
-        //     textStyle : {
-        //         fontSize : 20
-        //     }
-        // });
-        // force_option = {
-        //     title : {
-        //         text: '国际关系',
-        //         // subtext: '数据来自人立方',
-        //         x:'right',
-        //         y:'bottom'
-        //     },
-        //     tooltip : {
-        //         trigger: 'item',
-        //         formatter: '{a} : {b}'
-        //     },
-        //     toolbox: {
-        //         show : true,
-        //         feature : {
-        //             restore : {show: true},
-        //             magicType: {show: true, type: ['force', 'chord']},
-        //             saveAsImage : {show: true}
-        //         }
-        //     },
-        //     legend: {
-        //         x: 'left',
-        //         data:[
-        //             '全天候战略合作伙伴关系',
-        //             '全面战略协作伙伴关系',
-        //             '战略合作伙伴关系',
-        //             '全面战略合作伙伴关系',
-        //             '全面战略伙伴关系',
-        //             '全面合作伙伴关系',
-        //             '传统友好合作关系'
-        //         ]
-        //     },
-        //     series : [
-        //         {
-        //             type:'force',
-        //             name : "中国与主要几个来访国家的伙伴关系",
-        //             ribbonType: false,
-        //             categories : [
-        //                 {
-        //                     name: '',
-        //                 },
-        //                 {
-        //                     name: '全天候战略合作伙伴关系',
-        //                 },
-        //                 {
-        //                     name: '全面战略协作伙伴关系',
-        //                 },
-        //                 {
-        //                     name: '战略合作伙伴关系',
-        //                 },
-        //                 {
-        //                     name: '全面战略合作伙伴关系',
-        //                 },
-        //                 {
-        //                     name: '全面战略伙伴关系',
-        //                 },
-        //                 {
-        //                     name:'全面合作伙伴关系',
-        //                 },
-        //                 {
-        //                     name:'传统友好合作关系'
-        //                 }
-        //             ],
-        //             itemStyle: {
-        //                 normal: {
-        //                     label: {
-        //                         show: true,
-        //                         textStyle: {
-        //                             color: '#333'
-        //                         }
-        //                     },
-        //                     nodeStyle : {
-        //                         brushType : 'both',
-        //                         borderColor : 'rgba(255,215,0,0.4)',
-        //                         borderWidth : 1
-        //                     },
-        //                     linkStyle: {
-        //                         type: 'curve'
-        //                     }
-        //                 },
-        //                 emphasis: {
-        //                     label: {
-        //                         show: false
-        //                         // textStyle: null      // 默认使用全局文本样式，详见TEXTSTYLE
-        //                     },
-        //                     nodeStyle : {
-        //                         //r: 30
-        //                     },
-        //                     linkStyle : {}
-        //                 }
-        //             },
-        //             useWorker: false,
-        //             minRadius : 15,
-        //             maxRadius : 25,
-        //             gravity: 1.1,
-        //             scaling: 1.1,
-        //             roam: 'move',
-        //             nodes:[
-        //                 {category:0, name: '中国', value : 10, label: '中国'},
-        //                 {category:1, name: '巴基斯坦',value : 10},
-        //                 {category:2, name: '俄罗斯',value : 9},
-        //                 {category:3, name: '韩国',value : 8},
-        //                 {category:3, name: '阿富汗',value : 8},
-        //                 {category:4, name: '柬埔寨',value : 6},
-        //                 {category:4, name: '泰国',value : 6},
-        //                 {category:4, name: '缅甸',value : 6},
-        //                 {category:4, name: '越南',value : 6},
-        //                 {category:4, name: '老挝',value : 6},
-        //                 {category:5, name: '蒙古',value : 5},
-        //                 {category:5, name: '南非',value : 5},
-        //                 {category:5, name: '阿根廷',value : 5},
-        //                 {category:5, name: '墨西哥',value : 5},
-        //                 {category:5, name: '委内瑞拉',value : 5},
-        //                 {category:7, name: '朝鲜',value : 4},
-        //             ],
-        //             links : [
-        //                 {source : '巴基斯坦', target : '中国', weight : 10, name: '中巴:全天候战略合作伙伴关系'},
-        //                 {source : '俄罗斯', target : '中国', weight : 9, name: '中俄:全面战略协作伙伴关系'},
-        //                 {source : '韩国', target : '中国', weight : 8, name: '中韩:战略合作伙伴关系'},
-        //                 {source : '阿富汗', target : '中国', weight : 8, name: '中阿:战略合作伙伴关系'},
-        //                 {source : '柬埔寨', target : '中国', weight : 6, name: '中柬:全面战略合作伙伴关系'},
-        //                 {source : '泰国', target : '中国', weight : 6, name: '中泰:全面战略合作伙伴关系'},
-        //                 {source : '缅甸', target : '中国', weight : 6, name: '中缅:全面战略合作伙伴关系'},
-        //                 {source : '老挝', target : '中国', weight : 6, name: '中老:全面战略合作伙伴关系'},
-        //                 {source : '越南', target : '中国', weight : 6, name: '中越:全面战略合作伙伴关系'},
-        //                 {source : '蒙古', target : '中国', weight : 5, name: '中蒙:全面战略伙伴关系'},
-        //                 {source : '南非', target : '中国', weight : 5, name: '中南:全面战略伙伴关系'},
-        //                 {source : '阿根廷', target : '中国', weight : 5, name: '中阿:全面战略伙伴关系'},
-        //                 {source : '墨西哥', target : '中国', weight : 5, name: '中墨:全面战略伙伴关系'},
-        //                 {source : '委内瑞拉', target : '中国', weight : 5, name: '中委:全面战略伙伴关系'},
-        //                 {source : '朝鲜', target : '中国', weight : 4, name: '中朝:传统友好合作关系'},
-        //             ]
-        //         }
-        //     ]
-        // };
-        // //var ecConfig = require('echarts/config');
-        // //function focus(param) {
-        // //    var data = param.data;
-        // //    var links = option.series[0].links;
-        // //    var nodes = option.series[0].nodes;
-        // //    if (
-        // //        data.source !== undefined
-        // //        && data.target !== undefined
-        // //    ) { //点击的是边
-        // //        var sourceNode = nodes.filter(function (n) {return n.name == data.source})[0];
-        // //        var targetNode = nodes.filter(function (n) {return n.name == data.target})[0];
-        // //        console.log("选中了边 " + sourceNode.name + ' -> ' + targetNode.name + ' (' + data.weight + ')');
-        // //    } else { // 点击的是点
-        // //        console.log("选中了" + data.name + '(' + data.value + ')');
-        // //    }
-        // //}
-        // //myForceChart.on(ecConfig.EVENT.CLICK, focus)
-        // //
-        // //myForceChart.on(ecConfig.EVENT.FORCE_LAYOUT_END, function () {
-        // //    console.log(myForceChart.chart.force.getPosition());
-        // //});
-
-        // // 为echarts对象加载数据 
-        // // myForceChart.setOption(option); 
-        // setTimeout(function (){
-        //     myForceChart.hideLoading();
-        //     myForceChart.setOption(force_option);
-        // },2200);
-    </script>
-    </section>
+        </div>
+    </div>
 </body>
 </html>

@@ -109,12 +109,10 @@
                   <desc class="x centered">533.92027972</desc>
                   <desc class="y centered">382.797202797</desc>
                </g>
-               <g class="bar">
-                  <rect class="rect reactive tooltip-trigger" height="538.461538462" rx="0" ry="0" width="42.5378461538" x="567.581426573" y="10.7692307692" />
+                  <rect x="385" y="148" width="28" height="89" rx="0" ry="0" fill-opacity="1" fill="#0075c2" stroke="#333333" stroke-opacity="1" stroke-width="0.000001" stroke-dasharray="none" stroke-linejoin="miter" style="fill-opacity: 1; fill: #0075c2; stroke: #333333; stroke-opacity: 1; stroke-linejoin: miter;" />
                   <desc class="value">55</desc>
                   <desc class="x centered">588.85034965</desc>
                   <desc class="y centered">280.0</desc>
-               </g>
             </g>
          </g>
       </g>
